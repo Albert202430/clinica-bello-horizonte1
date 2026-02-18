@@ -49,7 +49,7 @@ export default function Footer() {
                                 { name: 'Nosotros', path: '/nosotros' },
                                 { name: 'Médicos', path: '/medicos' },
                                 { name: 'Citas', path: '/citas' },
-                                { name: 'Contacto', path: '/contacto' }
+
                             ].map((link, idx) => (
                                 <li key={idx}>
                                     <Link href={link.path} className="group flex items-center text-blue-100 hover:text-white transition-all duration-300">
@@ -64,11 +64,11 @@ export default function Footer() {
                     {/* Services - Spans 3 columns */}
                     <div className="lg:col-span-3 mt-4 lg:mt-0">
                         <h3 className="text-lg font-bold mb-6 relative">
-                            Servicios Destacados
+                            Especialidades Medicas
                             <span className="absolute -bottom-2 left-0 w-8 h-1 bg-cyan-400 rounded-full"></span>
                         </h3>
                         <ul className="space-y-3 text-sm">
-                            {['Cardiología Avanzada', 'Pediatría Integral', 'Ginecología y Obstetricia', 'Laboratorio Clínico', 'Rayos X Digital', 'Urgencias 24/7'].map((service, idx) => (
+                            {['Laboratorio', 'Tomografia', 'Rayos X', 'Ecografia', 'Emergencia', 'Sala de Operación', 'Hospitalización', 'UCI', 'Farmacia', 'Banco de Sangre'].map((service, idx) => (
                                 <li key={idx} className="flex items-center text-blue-100 group cursor-default">
                                     <Heart size={10} className="mr-2 text-cyan-400 fill-cyan-400" />
                                     <span className="group-hover:text-white transition-colors">{service}</span>
@@ -117,9 +117,8 @@ export default function Footer() {
                             {[
                                 { Icon: Facebook, href: "#" },
                                 { Icon: Instagram, href: "#" },
-                                { Icon: Twitter, href: "#" },
-                                { Icon: Linkedin, href: "#" },
-                                { Icon: Youtube, href: "#" }
+                                { Icon: Youtube, href: "#" },
+
                             ].map((social, index) => (
                                 <a
                                     key={index}

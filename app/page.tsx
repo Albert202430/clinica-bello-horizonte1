@@ -2,6 +2,10 @@
 import { motion } from "framer-motion";
 import Header from "@/app/components/Header";
 import ServiciosFlip from "@/app/components/ServiciosFlip";
+import Estadisticas from "@/app/components/Estadisticas";
+import TeamSection from "@/app/components/TeamSection";
+import DoctoresDestacadosBanner from "@/app/components/DoctoresDestacadosBanner";
+
 
 export default function Home() {
   return (
@@ -29,7 +33,7 @@ export default function Home() {
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
             className="text-blue-400 font-medium tracking-[0.3em] uppercase mb-4 text-sm md:text-lg"
           >
-            La mejor clínica de Piura
+            Primera clínica del sector oeste
           </motion.p>
           <motion.h1
             className="text-white text-5xl md:text-8xl font-black tracking-tighter drop-shadow-2xl"
@@ -57,8 +61,15 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Sección de Estadísticas */}
+      <Estadisticas />
+
       {/* Sección de Servicios */}
       <ServiciosFlip />
+      {/* Sección de Equipo */}
+      <TeamSection />
+      {/* Banner de Doctores Destacados */}
+      <DoctoresDestacadosBanner />
     </main>
   );
 }

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { servicios } from "@/app/data/servicio";
 
+
 export default function ServiciosFlip() {
     return (
         <section className="py-24 px-4 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
@@ -91,5 +92,6 @@ export default function ServiciosFlip() {
                 </motion.div>
             </div>
         </section>
+
     );
 }
