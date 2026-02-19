@@ -88,20 +88,20 @@ export default function Footer() {
                             <div className="flex items-start bg-[#005082]/50 p-4 rounded-lg border border-white/5 backdrop-blur-sm group hover:bg-[#005082]/70 transition-colors">
                                 <MapPin className="mr-3 mt-1 text-cyan-400 flex-shrink-0" size={18} />
                                 <span className="text-blue-100 text-xs leading-relaxed">
-                                    Av. Principal 123, Bello Horizonte,<br /> Escazú, San José, Costa Rica
+                                    Av. Los Diamantes Cruce con Av. Ramòn Romero a Espaldas del Terminal Terreste Gechiza,<br /> Piura - Perù
                                 </span>
                             </div>
 
                             {/* Phone Card */}
                             <div className="flex items-center bg-[#005082]/50 p-4 rounded-lg border border-white/5 backdrop-blur-sm group hover:bg-[#005082]/70 transition-colors">
                                 <Phone className="mr-3 text-cyan-400 flex-shrink-0" size={18} />
-                                <span className="text-white text-sm font-semibold tracking-wide">+506 2234-5678</span>
+                                <span className="text-white text-sm font-semibold tracking-wide">+51 947052846 <br /> +51 947052792</span>
                             </div>
 
                             {/* Email Card */}
                             <div className="flex items-center bg-[#005082]/50 p-4 rounded-lg border border-white/5 backdrop-blur-sm group hover:bg-[#005082]/70 transition-colors">
                                 <Mail className="mr-3 text-cyan-400 flex-shrink-0" size={18} />
-                                <span className="text-blue-100 text-xs">info@clinicabellohorizonte.com</span>
+                                <span className="text-blue-100 text-xs">informes@clinicabellohorizonte.com.pe</span>
                             </div>
                         </div>
                     </div>
@@ -115,9 +115,9 @@ export default function Footer() {
                         {/* Social Icons Row - Full width style */}
                         <div className="w-full flex justify-center items-center divide-x divide-white/10">
                             {[
-                                { Icon: Facebook, href: "#" },
-                                { Icon: Instagram, href: "#" },
-                                { Icon: Youtube, href: "#" },
+                                { Icon: Facebook, href: "https://www.facebook.com/clinicabellohorizontepiura/" },
+                                { Icon: Instagram, href: "https://www.instagram.com/clinicabellohorizonte.piura/" },
+                                { Icon: Youtube, href: "https://www.youtube.com/@clinicabellohorizonte9825" },
 
                             ].map((social, index) => (
                                 <a

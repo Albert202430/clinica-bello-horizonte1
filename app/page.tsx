@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import Header from "@/app/components/Header";
 import ServiciosFlip from "@/app/components/ServiciosFlip";
 import Estadisticas from "@/app/components/Estadisticas";
+import DoctorsSection from "@/app/components/DoctorsSection";
 import TeamSection from "@/app/components/TeamSection";
-import DoctoresDestacadosBanner from "@/app/components/DoctoresDestacadosBanner";
+
+
 
 
 export default function Home() {
@@ -66,10 +68,12 @@ export default function Home() {
 
       {/* Sección de Servicios */}
       <ServiciosFlip />
-      {/* Sección de Equipo */}
       <TeamSection />
       {/* Banner de Doctores Destacados */}
-      <DoctoresDestacadosBanner />
+
+      <DoctorsSection />
+
+
     </main>
   );
 }

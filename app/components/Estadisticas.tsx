@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 function Counter({ value }: { value: string }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const isInView = useInView(ref, { once: true });
     const numericValue = parseInt(value, 10);
 
     const spring = useSpring(0, { mass: 0.8, stiffness: 75, damping: 15 });

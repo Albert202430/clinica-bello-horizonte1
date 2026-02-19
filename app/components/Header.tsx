@@ -25,10 +25,11 @@ export default function Header() {
     const closeMenu = () => setIsMenuOpen(false);
 
     return (
-        <header className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-2 md:px-8 md:py-3 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-            }`}>
+        <header className={`fixed top-0 left-0 w-full z-[999] flex justify-between items-center px-6 py-2 md:px-8 md:py-3 transition-all duration-300`}>
+            {/* Background & Blur Layer */}
+            <div className={`absolute inset-0 -z-10 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`} />
             {/* LOGO */}
-            <div className="flex items-center z-50">
+            <div className="flex items-center z-50 relative">
                 <Link href="/" onClick={closeMenu} className="cursor-pointer hover:opacity-80 transition-opacity">
                     <img
                         src="/logo-bello-horizonte.png"
@@ -41,7 +42,7 @@ export default function Header() {
             {/* BOTÓN HAMBURGUESA (Visible solo en móviles) */}
             <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className={`md:hidden z-50 p-2 focus:outline-none transition-colors ${isMenuOpen || !isScrolled ? 'text-white' : 'text-[#0173BC]'}`}
+                className={`md:hidden z-50 relative p-2 focus:outline-none transition-colors ${isMenuOpen || !isScrolled ? 'text-white' : 'text-[#0173BC]'}`}
                 aria-label="Toggle Menu"
             >
                 <div className="space-y-2">
@@ -53,8 +54,8 @@ export default function Header() {
 
             {/* NAVEGACIÓN */}
             <nav className={`
-                fixed inset-0 bg-zinc-900/95 backdrop-blur-md transition-transform duration-300 ease-in-out flex flex-col items-center justify-center
-                md:static md:bg-transparent md:backdrop-blur-none md:flex-row md:translate-x-0 md:h-auto md:w-auto
+                fixed inset-0 w-full h-[100dvh] bg-black backdrop-blur-md transition-transform duration-300 ease-in-out flex flex-col items-center justify-start pt-32 overflow-y-auto z-40
+                md:static md:bg-transparent md:backdrop-blur-none md:flex-row md:translate-x-0 md:h-auto md:w-auto md:pt-0 md:justify-end md:overflow-visible
                 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             `}>
                 <ul className={`flex flex-col md:flex-row gap-8 items-center text-xl md:text-base font-medium transition-colors ${isScrolled ? 'text-[#0173BC]' : 'text-white'} ${isMenuOpen ? '!text-white' : ''}`}>
@@ -62,13 +63,13 @@ export default function Header() {
                         <Link href="/" onClick={closeMenu} className="hover:text-blue-300 transition-colors">Inicio</Link>
                     </li>
                     <li>
-                        <Link href="/servicios" onClick={closeMenu} className="hover:text-blue-300 transition-colors">Nosotros</Link>
+                        <Link href="/nosotros" onClick={closeMenu} className="hover:text-blue-300 transition-colors">Nosotros</Link>
                     </li>
                     <li>
                         <Link href="/medicos" onClick={closeMenu} className="hover:text-blue-300 transition-colors">Médicos</Link>
                     </li>
                     <li>
-                        <Link href="/nosotros" onClick={closeMenu} className="hover:text-blue-300 transition-colors">Servicios</Link>
+                        <Link href="/servicios" onClick={closeMenu} className="hover:text-blue-300 transition-colors">Servicios</Link>
                     </li>
                     <li>
                         <Link href="/Blog" onClick={closeMenu} className="hover:text-blue-300 transition-colors">Blog</Link>

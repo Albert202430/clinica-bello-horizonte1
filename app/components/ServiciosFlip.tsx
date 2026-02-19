@@ -1,9 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation"; //Importamos el hook
 import { servicios } from "@/app/data/servicio";
 
-
 export default function ServiciosFlip() {
+    const router = useRouter(); // Inicializamos el router
+
     return (
         <section className="py-24 px-4 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
             {/* Fondo decorativo */}
@@ -72,7 +74,7 @@ export default function ServiciosFlip() {
                     ))}
                 </div>
 
-                {/* Botón "Ver todos los servicios" */}
+                {/* Botón "Ver todos los servicios" con redirección */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -83,6 +85,7 @@ export default function ServiciosFlip() {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => router.push('/servicios')} //  Redirige a /servicios
                         className="relative inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 overflow-hidden group"
                     >
                         <span className="relative z-10">Ver todos los servicios</span>
@@ -92,6 +95,5 @@ export default function ServiciosFlip() {
                 </motion.div>
             </div>
         </section>
-
     );
 }
