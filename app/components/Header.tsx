@@ -1,4 +1,4 @@
-"use client"; // Necesario para manejar el estado del menú
+"use client"; 
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';

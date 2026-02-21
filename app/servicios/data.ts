@@ -1,7 +1,6 @@
-// servicios/data.ts
-import { Servicio } from "./types";
+import { Servicio, Especialidad } from "./types";
 
-const servicios: Servicio[] = [
+export const servicios: Servicio[] = [
   {
     id: 1,
     titulo: "Consulta Externa",
@@ -70,4 +69,54 @@ const servicios: Servicio[] = [
   }
 ];
 
-export default servicios;
+
+export const especialidades: Especialidad[] = [
+  {
+    id: 1,
+    nombre: "Cardiología",
+    descripcionCorta: "Cuidado experto del corazón y prevención de enfermedades cardiovasculares.",
+    icono: "❤️",
+    disponible: true,
+    slug: "cardiologia"
+  },
+  {
+    id: 2,
+    nombre: "Pediatría",
+    descripcionCorta: "Atención integral para el crecimiento y bienestar de los más pequeños.",
+    icono: "👶",
+    disponible: true,
+    slug: "pediatria"
+  },
+  {
+    id: 3,
+    nombre: "Ginecología",
+    descripcionCorta: "Especialistas en salud reproductiva y cuidado integral de la mujer.",
+    icono: "👩",
+    disponible: true,
+    slug: "ginecologia"
+  },
+  {
+    id: 4,
+    nombre: "Traumatología",
+    descripcionCorta: "Tratamiento avanzado de lesiones óseas, musculares y articulares.",
+    icono: "🦴",
+    disponible: true,
+    slug: "traumatologia"
+  },
+  {
+    id: 5,
+    nombre: "Dermatología",
+    descripcionCorta: "Expertos en el cuidado, diagnóstico y tratamiento de la piel.",
+    icono: "✨",
+    disponible: true,
+    slug: "dermatologia"
+  },
+  {
+    id: 6,
+    nombre: "Neurología",
+    descripcionCorta: "Atención especializada del sistema nervioso y funciones cerebrales.",
+    icono: "🧠",
+    disponible: true,
+    slug: "neurologia"
+  }
+];
