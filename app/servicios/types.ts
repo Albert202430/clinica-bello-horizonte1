@@ -1,11 +1,11 @@
 // servicios/types.ts
 
-// Tipo base para Servicios (como Laboratorio, Rayos X)
+import { LucideIcon } from "lucide-react";
 export type Servicio = {
   id: number;
   titulo: string;
   descripcion: string;
-  icono: string; 
+  icono: LucideIcon;  
   color?: string; 
 };
 
@@ -14,7 +14,7 @@ export type Especialidad = {
   id: number;
   nombre: string;
   descripcionCorta: string;
-  icono: string;
+  icono: LucideIcon;  
   imagenFondo?: string; 
   disponible: boolean;
   slug: string; 

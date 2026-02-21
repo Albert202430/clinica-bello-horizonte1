@@ -64,7 +64,7 @@ export default function Footer() {
                     {/* Services - Spans 3 columns */}
                     <div className="lg:col-span-3 mt-4 lg:mt-0">
                         <h3 className="text-lg font-bold mb-6 relative">
-                            Especialidades Medicas
+                            Servicios medicos
                             <span className="absolute -bottom-2 left-0 w-8 h-1 bg-cyan-400 rounded-full"></span>
                         </h3>
                         <ul className="space-y-3 text-sm">

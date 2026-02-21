@@ -53,7 +53,7 @@ export default function MedicosPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0173BC]/95 via-[#0173BC]/75 to-[#10b5c5]/55"></div>
         <div className="relative z-10 px-6 max-w-4xl text-white">
           <span className="inline-block mb-4 px-6 py-1.5 rounded-full bg-white/20 backdrop-blur border border-white/30 text-sm font-semibold"> STAFF MÉDICO </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4"> Equipo Médico Especializado </h1>
+          <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-6"> Equipo Médico</h1>
           <p className="text-lg text-white/90"> Conoce a nuestros profesionales altamente capacitados. </p>
         </div>
         <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 90" preserveAspectRatio="none">
