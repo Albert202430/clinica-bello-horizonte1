@@ -5,6 +5,7 @@ import ServiciosFlip from "@/app/components/ServiciosFlip";
 import Estadisticas from "@/app/components/Estadisticas";
 import DoctorsSection from "@/app/components/DoctorsSection";
 import TeamSection from "@/app/components/TeamSection";
+import AgendarCitaSection from "@/app/components/AgendarCitaSection";
 
 export default function Home() {
   return (
@@ -77,6 +78,9 @@ export default function Home() {
       <TeamSection />
       {/* Banner de Doctores Destacados */}
       <DoctorsSection />
+
+      {/* Sección Agendar Cita */}
+      <AgendarCitaSection id="agendar-cita" />
     </main>
   );
 }
