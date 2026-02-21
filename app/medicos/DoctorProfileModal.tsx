@@ -7,8 +7,8 @@ export default function DoctorProfileModal({ medico, onClose }: DoctorProfileMod
 
   // Función para manejar el agendamiento por WhatsApp
   const handleAgendarClick = () => {
-    const telefono = "51947052846"; // ⬅️ REEMPLAZA CON EL NÚMERO REAL DE LA CLÍNICA (ej: 51 + número)
-    const mensaje = `Hola, quiero reservar una cita con el dr. ${medico.nombre}, solicito información.`;
+    const telefono = "51947052846"; 
+    const mensaje = `Hola, quiero reservar una cita con el Dr. ${medico.nombre}. Solicito información.`;
     
     // Codificamos el mensaje para que sea válido en una URL
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
@@ -46,7 +46,7 @@ export default function DoctorProfileModal({ medico, onClose }: DoctorProfileMod
         {/* BODY CON 3 COLUMNAS OPTIMIZADAS */}
         <div className="p-6 md:p-10 grid grid-cols-1 lg:grid-cols-12 gap-6">
           
-          {/* 1. COLUMNA IZQUIERDA: Foto y Botón Agendar */}
+          {/* 1. COLUMNA IZQUIERDA*/}
           <div className="lg:col-span-2 flex flex-col gap-4">
             <div className="relative aspect-square w-full">
               <img

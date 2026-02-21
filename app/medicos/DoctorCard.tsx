@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react"; // Importamos useState
+import React, { useState } from "react"; 
 import Image from "next/image";
 import { Doctor } from "./types";
 
@@ -14,7 +14,7 @@ export default function DoctorCard({ medico, onVerPerfil }: DoctorCardProps) {
   const [isLiked, setIsLiked] = useState(false);
 
   const handleLike = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Evita que al dar like se abra el perfil
+    e.stopPropagation(); 
     if (!isLiked) {
       setLikes(prev => prev + 1);
       setIsLiked(true);

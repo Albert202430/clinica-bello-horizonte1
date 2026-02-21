@@ -47,7 +47,7 @@ export default function MedicosPage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* HERO (Sin cambios) */}
+      {/* HERO*/}
       <section className="relative h-[420px] overflow-hidden flex items-center justify-center text-center">
         <img src="/images/clinica1.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0173BC]/95 via-[#0173BC]/75 to-[#10b5c5]/55"></div>
@@ -61,7 +61,7 @@ export default function MedicosPage() {
         </svg>
       </section>
       
-      <div className="h-20"></div>
+      <div className="h-8"></div>
 
       {/* BUSCADOR ACTUALIZADO */}
       <section className="max-w-6xl mx-auto -mt-16 px-4 sm:px-6 relative z-30">
@@ -76,7 +76,7 @@ export default function MedicosPage() {
             className="w-full bg-white text-gray-800 border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#0173BC] outline-none"
           />
 
-          {/* DROPDOWN PERSONALIZADO (En lugar del select) */}
+          {/* DROPDOWN PERSONALIZADO*/}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setIsOpen(!isOpen)}
