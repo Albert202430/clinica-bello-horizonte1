@@ -13,9 +13,11 @@ export default function ServiceCard({ servicio }: { servicio: Servicio }) {
         <div className="absolute inset-0 bg-white rounded-3xl shadow-sm border border-blue-50 flex items-center justify-center 
                         transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)]
                         group-hover:bg-[#0173BC] group-hover:-translate-y-2 group-hover:shadow-lg group-hover:shadow-blue-200">
-          <span className="text-4xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-md">
-            {servicio.icono}
-          </span>
+          <servicio.icono 
+            size={44} 
+            strokeWidth={1.5} 
+            className="transition-all duration-500 group-hover:scale-110 text-[#0173BC] group-hover:text-white" 
+          />
         </div>
       </div>
       

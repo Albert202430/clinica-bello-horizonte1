@@ -23,10 +23,10 @@ export default function ServiciosFlip() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
-                        Nuestros <span className="text-blue-600">Servicios</span>
+                   <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4">
+                        Nuestros <span className="text-[#0173BC]">Servicios</span>
                     </h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-600 mx-auto rounded-full" />
+                    <div className="w-24 h-1 bg-gradient-to-r from-[#10b5c5] to-[#0173BC] mx-auto rounded-full" />
                     <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
                         Brindamos atención integral con tecnología de punta y un equipo humano de excelencia.
                     </p>
@@ -84,10 +84,10 @@ export default function ServiciosFlip() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => router.push('/servicios')} //  Redirige a /servicios
-                        className="relative inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 overflow-hidden group"
+                        className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-[#0173BC] to-[#10b5c5] rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group"
                     >
                         <span className="relative z-10">Ver todos los servicios</span>
-                        <span className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <span className="absolute inset-0 bg-gradient-to-r from-[#10b5c5] to-[#0173BC] opacity-0 group-hover:opacity-100 transition-opacity" />
                         <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                     </motion.button>
                 </motion.div>
