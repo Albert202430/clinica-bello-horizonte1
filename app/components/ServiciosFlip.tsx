@@ -65,9 +65,7 @@ export default function ServiciosFlip() {
                                             {servicio.description}
                                         </p>
                                     </div>
-                                    <button className="bg-white hover:bg-gray-100 text-[#0173BC] font-medium py-2 px-4 rounded-lg transition-colors w-fit">
-                                        Conoce más
-                                    </button>
+
                                 </div>
                             </div>
                         </motion.div>

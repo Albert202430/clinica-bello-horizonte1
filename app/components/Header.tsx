@@ -78,12 +78,12 @@ export default function Header() {
                         <Link
                             href="/#agendar-cita"
                             onClick={closeMenu}
-                            className={`px-5 py-2 md:px-4 md:py-1.5 rounded-lg transition-all text-center ${isScrolled
-                                ? 'bg-[#0173BC] text-white hover:bg-blue-700'
-                                : 'bg-blue-600 md:bg-white/20 md:border md:border-white/30 text-white hover:bg-blue-700 md:hover:bg-white/30'
+                            className={`px-6 py-2 md:px-6 md:py-2 rounded-full font-bold transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 ${isScrolled
+                                ? 'bg-[#10b5c5] text-white hover:bg-[#0e9ea0]'
+                                : 'bg-[#10b5c5] text-white hover:bg-[#0e9ea0] border border-white/30'
                                 }`}
                         >
-                            Agendar Cita
+                            AGENDAR CITA
                         </Link>
                     </li>
                 </ul>

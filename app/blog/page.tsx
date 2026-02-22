@@ -37,7 +37,7 @@ export default function BlogPage() {
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="relative h-[500px] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0173BC] to-[#10b5c5] opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0072BB] to-[#0072BB] opacity-90" />
         <motion.div
           animate={{ scale: [1, 1.1, 1] }}
           transition={{ duration: 20, repeat: Infinity }}
@@ -59,10 +59,6 @@ export default function BlogPage() {
               <span className="text-white">Blog </span>{" "}
 
             </h1>
-
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Artículos escritos por nuestros especialistas
-            </p>
 
             <div className="w-24 h-1 bg-white/30 mx-auto rounded-full" />
           </motion.div>
